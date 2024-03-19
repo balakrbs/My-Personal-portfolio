@@ -30,19 +30,31 @@
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
-                            flex-wrap: wrap;
+                            position: absolute;
+                            margin-top: -20px;
+                            margin-left: -8%;
+                            width: 100%;
+                            padding: 5px 50px;
                         }
                         
                         .logo {
-                            width: 180px;
-                            filter: invert();
-                            mix-blend-mode: difference;
+                            width: 190px;
+                            margin-right: 350px;
+                            font-size: 36px;
+                            font-family: "Electrolize", sans-serif;
+                            letter-spacing: 5px;
+                            font-weight: 800;
+                        }
+                        
+                        .logo span {
+                            font-family: "Electrolize", sans-serif;
+                            color: #e60000;
                         }
                         
                         nav ul li {
                             display: inline-block;
                             list-style: none;
-                            margin: 10px 20px;
+                            margin: 10px 30px;
                         }
                         
                         nav ul li a {
@@ -70,7 +82,7 @@
                         }
                         
                         .header-text {
-                            margin-top: 12%;
+                            margin-top: 18%;
                             font-size: 40px;
                         }
                         
@@ -96,12 +108,17 @@
                         }
                         
                         .about-col-1 {
-                            flex-basis: 35%;
+                            flex-basis: 30%;
+                            background: none;
                         }
                         
                         .about-col-1 img {
-                            width: 100%;
+                            width: 105%;
                             border-radius: 15px;
+                        }
+                        
+                        #img1 {
+                            box-shadow: -8px 4px 18px 8px #191446;
                         }
                         
                         .about-col-2 {
