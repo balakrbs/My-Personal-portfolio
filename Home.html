@@ -23,12 +23,12 @@
             <nav>
                 <img src="images/Logo.png" class="logo">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li> <a href="#about">About</a> </li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio ">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li> <a href="#about" onclick="closemenu()">About</a> </li>
+                    <li><a href="#services" onclick="closemenu()">Services</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()" id="Xsolid"></i>
                 </ul>
                 <i class="fa-solid fa-bars" id="homebar" onclick="openmenu()"></i>
             </nav>
@@ -222,6 +222,6 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
-    < /body>
+</body>
 
-        < /html>
+</html>
