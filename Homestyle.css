@@ -578,3 +578,50 @@
                                             text-align: center;
                                         }
                                     }
+
+                                    /* cart */
+
+                                    .place{
+                                        position: relative;
+                                    }
+                                    .cart{
+                                        margin: 0 auto;
+                                        padding: 2em;
+                                        width: 500px;
+                                        background-color: #7f7f7f;
+                                        color: #ffffff;
+                                        border-radius: 10px;
+                                    }
+                                    @property --angle{
+                                        syntax: "<angle>";
+                                        initial-value: 0deg;
+                                        inherits: false;
+                                    }
+
+                                    .cart::after,
+                                    .cart::before{
+                                        content: "";
+                                        position:absolute;
+                                        width: 38.4%;
+                                        height: 100%;
+                                        /* background-color: #e60000; */
+                                        background:conic-gradient(from var(--angle),transparent 70%, #e60000);
+                                        top: -2%;
+                                        left:30.6%;                                                            border-radius:10px;
+                                        padding: 3px;
+                                        z-index: -1;
+                                        animation: 3s spin linear infinite;
+                                    }
+                                    .cart::before{
+                                       filter: blur(1.5rem);
+                                       opacity: 0.5;
+                                    }
+
+                                    @keyframes spin{
+                                        from{
+                                            --angle:0deg
+                                        }
+                                        to{
+                                            --angle:360deg
+                                        }
+                                    }
